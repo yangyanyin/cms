@@ -1,11 +1,11 @@
-import { defineAsyncComponent } from 'vue'
+// import { defineAsyncComponent } from 'vue'
 import { createRouter, createWebHistory } from "vue-router"
 
 // const home = () => import('../page/home')
 // const about = () => import('../page/about')
 
-const home = defineAsyncComponent(() => import('../page/home'))
-const about = defineAsyncComponent(() => import('../page/about'))
+const home = () =>import('../page/home')
+const about = () =>import('../page/about')
 
 
 const routes = [
