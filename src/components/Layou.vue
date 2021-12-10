@@ -2,7 +2,9 @@
   <Sidebar />
   <main class="container-main" :class="{unfold: sidebarUnfold}">
     <Header />
-    <slot></slot>
+    <div class="content">
+      <slot></slot>
+    </div>
   </main>
 </template>
 <script>
@@ -32,6 +34,9 @@ export default {
   transition: .3s;
   &.unfold {
     padding-left: 210px;
+  }
+  .content {
+    padding: 20px;
   }
 }
 </style>

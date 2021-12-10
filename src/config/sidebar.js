@@ -19,9 +19,5 @@ export default [
             menu_url: '/danyangdan-list',
         },
       ]
-    },
-    {
-      name: '配置',
-      menu_url: 'config'
     }
 ]

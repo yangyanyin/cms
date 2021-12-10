@@ -88,6 +88,12 @@ export default {
   transition: .3s;
   &.unfold {
     width: 210px;
+    li {
+      a, span {
+        padding-left: 15px;
+        font-size: 14px;
+      }
+    }
   }
   li {
     a, span {
@@ -96,7 +102,9 @@ export default {
       padding-left: 30px;
       line-height: 56px;
       color: #fff;
+      font-size: 12px;
       cursor: pointer;
+      transition: .3s;
       &.router-link-active {
         color: #1890ff;
       }

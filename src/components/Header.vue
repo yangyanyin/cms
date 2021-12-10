@@ -185,6 +185,7 @@ export default {
       }
     }
     &.lang {
+      display: none;
       div {
         left: -20px;
         &::after {
