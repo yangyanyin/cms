@@ -1,14 +1,15 @@
 <template>
-  <router-view></router-view>
+  <Layou>
+    <router-view></router-view>
+  </Layou>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<script>
+import './assets/css/app.less'
+import Layou from './components/Layou'
+export default {
+  components: {
+    Layou
+  },
+  setup () {},
 }
-</style>
+</script>

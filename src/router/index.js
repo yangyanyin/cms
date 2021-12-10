@@ -1,23 +1,31 @@
 // import { defineAsyncComponent } from 'vue'
-import { createRouter, createWebHistory } from "vue-router"
+import { createRouter, createWebHistory } from 'vue-router'
 
-// const home = () => import('../page/home')
-// const about = () => import('../page/about')
-
-const home = () =>import('../page/home')
-const about = () =>import('../page/about')
-
+const home = () =>import('../views/Home')
+const Danyangdan = () =>import('../views/Danyangdan')
+const DanyangdanList = () =>import('../views/DanyangdanList')
+const UserCenter = () =>import('../views/UserCenter')
 
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: '首页',
     component: home
   },
   {
-    path: '/about',
-    name: 'about',
-    component: about
+    path: '/danyangdan',
+    name: '打样单',
+    component: Danyangdan
+  },
+  {
+    path: '/danyangdan-list',
+    name: '打样单列表',
+    component: DanyangdanList
+  },
+  {
+    path: '/user-center',
+    name: '个人中心',
+    component: UserCenter
   }
 ]
 
